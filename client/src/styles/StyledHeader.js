@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   min-height: 250px;
 
   @media (min-width: 768px) {
-    min-height: 340px;
+    /* min-height: 340px; */
   }
 
   &:after {
@@ -41,8 +41,8 @@ const StyledHeader = styled.header`
 
   img.header__img {
     width: 20%;
-    max-width: 250px;
-    min-width: 120px;
+    max-width: 150px;
+    min-width: 75px;
     margin-right: var(--spacing-lg);
     box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
     background-color: var(--dark-grey);
