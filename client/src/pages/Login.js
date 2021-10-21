@@ -29,10 +29,15 @@ const StyledTitle = styled.h1`
   padding: var(--spacing-sm) var(--spacing-xl);
 `;
 
+const LOGIN_URI =
+  process.env.NODE_ENV !== 'production'
+    ? 'http://localhost:8080/login'
+    : 'https://spotify-visualize.herokuapp.com/login';
+
 const Login = () => (
   <StyledLoginContainer>
     <StyledTitle>Spotify Visualize</StyledTitle>
-    <StyledLoginButton href="http://localhost:8080/login">
+    <StyledLoginButton href={ LOGIN_URI }>
       Log in to Spotify
     </StyledLoginButton>
   </StyledLoginContainer>
